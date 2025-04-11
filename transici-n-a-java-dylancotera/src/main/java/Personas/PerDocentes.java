@@ -1,5 +1,7 @@
 package Personas;
 
+import Planetas.Planeta;
+
 public class PerDocentes extends Persona {
 
 	private Integer cursos = 0;
@@ -20,4 +22,17 @@ public class PerDocentes extends Persona {
 	public Boolean esDestacado() {
 		return cursos > 3;
 	}
+	
+	@Override
+	public void ofrecerTributo(Planeta planeta) {
+		planeta.fundarMuseo();
+	}
+
+	@Override
+	public Integer valor() {
+		return super.valor() + 5;
+	}
+	
+	
+	
 }

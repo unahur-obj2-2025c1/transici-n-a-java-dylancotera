@@ -1,5 +1,7 @@
 package Personas;
 
+import Planetas.Planeta;
+
 public class PerAtletas extends Persona {
 
 	private Integer masaMuscular = 4;
@@ -35,5 +37,10 @@ public class PerAtletas extends Persona {
 	
 	public void aprenderTecnica() {
 		tecnicas += 1;
+	}
+	
+	@Override
+	public void ofrecerTributo(Planeta planeta) {
+		planeta.construirMurallas(2);
 	}
 }
